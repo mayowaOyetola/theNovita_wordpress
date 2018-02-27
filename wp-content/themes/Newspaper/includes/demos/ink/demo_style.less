@@ -1,0 +1,36 @@
+@import "../../less_files/variables.less";
+@import "../../less_files/mixin.less";
+
+
+.td-ink {
+  //&,
+  //.td-container-wrap {
+  //  background-color: #fffff6;
+  //}
+
+  // TITLES
+  .tdm-title-md {
+    letter-spacing: 1px;
+  }
+
+
+  // HEADER
+  &.tdm-menu-active-style2 {
+    .tdm-header.tdm-header-style-2 {
+      ul.sf-menu {
+        > .td-menu-item {
+          line-height: 100px;
+        }
+
+        a {
+          padding: 14px 0;
+          letter-spacing: 2px;
+        }
+      }
+      .td-affix ul.sf-menu a {
+        padding: 0;
+      }
+    }
+  }
+
+}

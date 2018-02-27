@@ -1,0 +1,115 @@
+/**
+  Custom code for small blocks modifications when editing the page with tdc composer
+*/
+
+
+// the vc_empty_space placeholder when editing
+
+
+.tdc-editing-vc_empty_space {
+  border: 1px dashed #e8e8e8;
+
+  .tdc-editing-text {
+    position: absolute;
+    top:50%;
+    font-size: 14px;
+    margin-top: -11px;
+    width: 100%;
+
+    text-align: center;
+    color: #dddddd;
+  }
+}
+
+.tdc-element-selected {
+  .tdc-editing-vc_empty_space {
+    border: none;
+  }
+}
+
+.tdc-editing-vc_single_image a {
+  width: 100%;
+}
+
+.td_block_single_image.tdc-block-empty {
+  outline: none;
+  &:after {
+    content: 'Set image';
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: #666;
+  }
+}
+
+.tdc-mask-top-header,
+.tdc-mask-header,
+.tdc-mask-loop,
+.tdc-mask-sidebar,
+.tdc-mask-instagram-footer,
+.tdc-mask-footer,
+.tdc-mask-sub-footer {
+
+  position: relative;
+
+  &:after {
+    background-color: #4eb2ec;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.tdc-mask-top-header {
+  &:after {
+    content: 'Top Header Settings';
+  }
+}
+
+.tdc-mask-header {
+  &:after {
+    content: 'Header Settings';
+  }
+}
+
+.tdc-mask-loop {
+  &:after {
+    content: 'Page Settings';
+  }
+}
+
+.tdc-mask-sidebar {
+  &:after {
+    content: 'Sidebar Settings';
+  }
+}
+
+.tdc-mask-footer {
+  &:after {
+    content: 'Footer Settings';
+  }
+}
+
+.tdc-mask-instagram-footer {
+  &:after {
+    content: 'Instagram Footer Settings';
+  }
+}
+
+.tdc-mask-sub-footer {
+  &:after {
+    content: 'SubFooter Settings';
+  }
+}

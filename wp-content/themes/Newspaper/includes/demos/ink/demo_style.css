@@ -1,0 +1,48 @@
+/*  ----------------------------------------------------------------------------
+    responsive settings
+*/
+/* responsive landscape tablet */
+/* responsive portrait tablet */
+/* responsive portrait phone */
+.mx_image_background {
+  background-color: #f2f2f2;
+}
+.td-visibility-hidden {
+  visibility: hidden;
+}
+/*  ----------------------------------------------------------------------------
+    from bootstrap
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+usage:
+.td-block-row {
+  .mx-row(td-block-span);
+}
+
+@all_span_selector - is the begining of the span selector
+ */
+.td-ink .tdm-title-md {
+  letter-spacing: 1px;
+}
+.td-ink.tdm-menu-active-style2 .tdm-header.tdm-header-style-2 ul.sf-menu > .td-menu-item {
+  line-height: 100px;
+}
+.td-ink.tdm-menu-active-style2 .tdm-header.tdm-header-style-2 ul.sf-menu a {
+  padding: 14px 0;
+  letter-spacing: 2px;
+}
+.td-ink.tdm-menu-active-style2 .tdm-header.tdm-header-style-2 .td-affix ul.sf-menu a {
+  padding: 0;
+}
